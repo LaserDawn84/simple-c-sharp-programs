@@ -1,0 +1,21 @@
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\bin\Release\Simple Web Browser.exe.config
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\bin\Release\Simple Web Browser.exe.manifest
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\bin\Release\Simple Web Browser.application
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\bin\Release\Simple Web Browser.exe
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\bin\Release\Simple Web Browser.pdb
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple_Web_Browser.Form1.resources
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple_Web_Browser.form2.resources
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple_Web_Browser.Properties.Resources.resources
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.csproj.GenerateResource.cache
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.csproj.CoreCompileInputs.cache
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.TrustInfo.xml
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.exe.manifest
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.application
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.exe
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.pdb
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\Application\Simple Web Browser.exe.config
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\Application\Simple Web Browser.exe.manifest
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\Application\Simple Web Browser.application
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\Application\Simple Web Browser.exe
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\Application\Simple Web Browser.pdb
+C:\Users\Jolt\source\repos\simple-c-sharp-programs\Simple Web Browser\Simple Web Browser\obj\Release\Simple Web Browser.csprojResolveAssemblyReference.cache
