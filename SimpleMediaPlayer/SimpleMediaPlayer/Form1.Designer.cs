@@ -116,6 +116,7 @@
             this.PreviousChapterBtn.TabIndex = 6;
             this.PreviousChapterBtn.Text = "<<";
             this.PreviousChapterBtn.UseVisualStyleBackColor = true;
+            this.PreviousChapterBtn.Click += new System.EventHandler(this.PreviousChapterBtn_Click);
             // 
             // NextChapterBtn
             // 
@@ -126,6 +127,7 @@
             this.NextChapterBtn.TabIndex = 7;
             this.NextChapterBtn.Text = ">>";
             this.NextChapterBtn.UseVisualStyleBackColor = true;
+            this.NextChapterBtn.Click += new System.EventHandler(this.NextChapterBtn_Click);
             // 
             // VolumeSlider
             // 
@@ -149,6 +151,7 @@
             this.RemoveVideoBtn.TabIndex = 9;
             this.RemoveVideoBtn.Text = "Remove Video";
             this.RemoveVideoBtn.UseVisualStyleBackColor = true;
+            this.RemoveVideoBtn.Click += new System.EventHandler(this.RemoveVideoBtn_Click);
             // 
             // label1
             // 

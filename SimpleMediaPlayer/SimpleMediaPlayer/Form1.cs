@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
 using WMPLib;
+using System.Diagnostics;
 
 namespace MediaPlayer
 {
@@ -21,7 +22,9 @@ namespace MediaPlayer
     {
         List<string> videoDirectories = new List<string>();
         int currentVideo = 0;
-        int listCount;
+        //int listCount;
+        int listPosition;
+        
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +34,7 @@ namespace MediaPlayer
         {
             axWindowsMediaPlayer1.uiMode = "none";
             axWindowsMediaPlayer1.settings.volume = VolumeSlider.Value;
+            
             
         }
 
@@ -42,13 +46,20 @@ namespace MediaPlayer
         private void AddVideoBtn_Click(object sender, EventArgs e)
         {
             OpenFileDialog oFD1 = new OpenFileDialog();
+            oFD1.Multiselect = true;
+            oFD1.Filter = "Video Files|*.mp4;*.mkv;*.avi;*.wmv;*.flv;*.m2t";
 
             if (oFD1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                videoDirectories.Add(oFD1.FileName);
-                VideoList.Items.Add(System.IO.Path.GetFileNameWithoutExtension(oFD1.FileName));
-                listCount += 1;
+                foreach(String file in oFD1.FileNames)
+                {
+                    videoDirectories.Add(file);
+                    VideoList.Items.Add(System.IO.Path.GetFileNameWithoutExtension(file));
+                }              
+
             }
+
+
         }
 
         private void PlayBtn_Click(object sender, EventArgs e)
@@ -106,6 +117,48 @@ namespace MediaPlayer
             //Future Applications for this could be for an ASP.Net website, to host an in home streaming service or various other ways of creating a feel of watching tv from
             //your collection of ripped dvds and legally downloaded video files.
 
+        }
+
+        private void PreviousChapterBtn_Click(object sender, EventArgs e)
+        {
+            if(videoDirectories.Count > 0)
+            {
+                if(currentVideo > 0)
+                {
+                    currentVideo--;
+                    axWindowsMediaPlayer1.URL = videoDirectories[currentVideo];
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                }
+            }
+        }
+
+        private void NextChapterBtn_Click(object sender, EventArgs e)
+        {
+            if (videoDirectories.Count > 0)
+            {
+                if (currentVideo >= 0)
+                {
+                    listPosition = currentVideo;
+                    currentVideo++;
+                    if(currentVideo < videoDirectories.Count)
+                    {
+                        axWindowsMediaPlayer1.URL = videoDirectories[currentVideo];
+                        axWindowsMediaPlayer1.Ctlcontrols.play();
+                    }
+                    else
+                    {
+                        currentVideo = listPosition;
+                        MessageBox.Show("No More Videos In The List");
+                    }
+                    
+                }
+            }
+        }
+
+        private void RemoveVideoBtn_Click(object sender, EventArgs e)
+        {
+            videoDirectories.RemoveAt(VideoList.SelectedIndex);
+            VideoList.Items.RemoveAt(VideoList.SelectedIndex);
         }
     }
 }
